@@ -7,6 +7,7 @@
 --color-grey: #A5A5A5;
 --color-light-grey: #F7F7F7;
 --color-white: #FFFFFF;
+--button-radius: 35px;
 }
 
 *{
@@ -15,6 +16,7 @@
 
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 header {
@@ -62,4 +64,36 @@ header {
   }
   .nav__element:last-child {
     padding-right: 10px;
+  }
+  .opener{
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+.opener_box{
+      margin-top: 50px;
+      text-align: center;
+  }
+  .opener_header{
+    font-size: 3.0625rem;
+  }
+  .opener_text{
+      font-size: 1rem;
+      padding: 20px;
+  }
+.btn{
+    padding: 16px 65px;
+    border-radius: var(--button-radius);
+    display: inline-block;
+    font-weight: bold;
+    color: var(--color-white);
+}
+.btn--primary {
+    background-color: var(--color-primary);
+    border-radius: var(--button-radius);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+  }
+  .btn--large {
+    padding: 22px 155px;
   }
